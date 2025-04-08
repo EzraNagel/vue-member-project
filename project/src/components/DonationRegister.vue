@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <form @submit="submitForm">
+        <form @submit="submitForm">
             <div class="field">
                 <label class="label">Donation Amount</label>
                 <div class="control">
@@ -8,11 +8,11 @@
 
                 </div>
             </div>
-        </form> -->
+        </form>
         <o-button @click="submitForm"></o-button>
     </div>
 </template>
-  
+
 <script>
 
 import { defineComponent, ref } from 'vue'
@@ -48,4 +48,3 @@ export default {
     components: {}
 }
 </script>
-  

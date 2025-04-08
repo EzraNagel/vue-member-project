@@ -12,10 +12,10 @@
       <p>Sort First Name A-Z</p>
       <o-switch @click="filterFirstName" />
     </div>
-    <!-- <div class="column">
+    <div class="column">
       <p>Only Active</p>
       <o-switch @click="filterStatus" />
-    </div> -->
+    </div>
 
 
   </div>
@@ -125,8 +125,6 @@
 <script>
 
 import { defineComponent, ref } from 'vue'
-//import EventsRegister from '../views/EventsRegisterView.vue';
-//import DonationRegister from '../views/DonationRegisterView.vue';
 import { usePeopleStore } from '../stores/PeopleStore';
 import { storeToRefs } from 'pinia';
 import { useVuelidate } from '@vuelidate/core'
@@ -229,12 +227,7 @@ export default {
         this.lastNameFilter = true;
       }
     },
-    // filterStatus(){
-    //   if (this.statusFilter){
-    //     for(const person of filteredPeople){
-    //     }
-    //   }
-    // }
+
   },
   setup() {
     const isImageModalActive = ref(false);
@@ -243,7 +236,6 @@ export default {
     const store = usePeopleStore();
     const firstNameFilter = ref(true);
     const lastNameFilter = ref(true);
-    // const statusFilter = ref(false);
     const { people } = storeToRefs(store);
     const { events } = storeToRefs(store);
     const filteredPeople = people;
