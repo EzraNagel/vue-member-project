@@ -78,7 +78,7 @@
     </div>
   </o-modal>
   <o-modal v-model:active="isEventModalActive" :width="640" scroll="clip">
-    <div style="padding 10px;">
+    <div style="padding: 10px;">
       <table class="table is-bordered is-striped is-hoverable is-fullwidth">
         <thead id="table">
           <td></td>
